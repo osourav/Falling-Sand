@@ -1,7 +1,7 @@
 const cvs = document.getElementById("myCanvas");
 const ctx = cvs.getContext("2d");
 
-const SCALE_SIZE = 3;
+const SCALE_SIZE = 2;
 const WIN_W = window.innerWidth;
 const WIN_H = window.innerHeight;
 const CVS_WIDTH = Math.floor(WIN_W / SCALE_SIZE);
@@ -12,7 +12,7 @@ cvs.width = WIN_W;
 cvs.height = WIN_H;
 
 const ani = new Animation(FPS, animate);
-const world = new World(CVS_WIDTH, CVS_HEIGHT, SCALE_SIZE);
+const world = new World(CVS_WIDTH, CVS_HEIGHT, SCALE_SIZE, 10);
 
 function animate() {
    world.draw(ctx);

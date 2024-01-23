@@ -22,5 +22,5 @@ body {
    width: 100svw;
    height: 100svh;
    background: #000000;
-   cursor: pointer;
+   /* cursor: pointer; */
 }
